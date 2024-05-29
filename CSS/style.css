@@ -4,25 +4,41 @@
   font-weight: 400;
   font-style: normal;
 }
-:root {
-  --header-height: 3rem;
-  --font-semi: 600;
+:root {--header-height: 3rem;
+    --font-semi: 600;
+ 
+ --hue-color: pink;
 }
-/* Variables CSS */
-:root {
-  --first-color: pink;
-  --second-color: black;
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: var(--font-semi);
 }
+::before,::after {
+    box-sizing: border-box;
+}
+html {scroll-behavior: smooth;
+}
+body {margin: var(--header-height) 0 0 0;
+font-family: var(--body-font);
+font-size: (--normal-font-size);
+/* color: var();} add color */
 
-:root {
-  --body-font: "Yeseva One", serif;
-  --big-font-size: 2rem;
-  --h2-font-size: 1.25rem;
-  --normal-font-size: 0.938rem;
+h1,h2,p {
+    margin: 0;
 }
-@media screen and (min-width: 768px) : :root {
-  --body-font: "Yeseva One", serif;
-  --big-font-size: 3.5rem;
-  --h2-font-size: 2rem;
-  --normal-font-size: 1rem;
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
