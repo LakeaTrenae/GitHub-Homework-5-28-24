@@ -17,8 +17,8 @@
   align-items: center;
   font-weight: var(--font-semi);
 }
-::before,
-::after {
+::before:,
+::after: {
   box-sizing: border-box;
 }
 html {
@@ -48,4 +48,30 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.section-title {
+  position: relative;
+  font-size: var(--h2-font-size);
+  /* color: ; add var */
+  /* margin-top: ; add var */
+  /* margin-bottom: ; add var */
+  text-align: center;
+}
+
+/* home */
+.home {
+  position: relative;
+  row-gap: 5rem;
+  padding: 4rem 0 5rem;
+}
+.home-title {
+  font-size: var(--big-font-size);
+  margin-bottom: auto;
+}
+.home-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 260px;
 }
